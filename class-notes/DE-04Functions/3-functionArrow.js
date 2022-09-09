@@ -70,3 +70,7 @@ return fib2;
 }
 
  console.log(fibo(7)); 
+
+
+
+ 
