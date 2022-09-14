@@ -63,7 +63,7 @@ console.log(meyveler);
 
 console.log(meyveler, "sildigim meyve:", meyveler.pop());
 
-// shift() dizinin ilk elamanini siler yazdirilinca sil,digi ilk elamani döndürür
+// shift() dizinin ilk elamanini siler yazdirilinca sil,digi elamani döndürür
 
 console.log(meyveler, meyveler.shift());
 

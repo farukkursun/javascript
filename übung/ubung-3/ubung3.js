@@ -40,3 +40,6 @@ return sonuc
 
 }
 console.log(artikYilBulma(2000)); 
+
+
+
