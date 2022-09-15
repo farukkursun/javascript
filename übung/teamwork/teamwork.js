@@ -57,16 +57,16 @@ console.log(avengers.splice(2, 1, "Thor", "Hawkeye"));
 console.log(avengers);
 
 //soru 10
-// const inputString = "Lorem ipsum dolor sit amet, consecteturadipiscing elit.";
-// const capitalizeFirstLetter = (x) => {
-// const yeni= inputString.split(' ')  
-//   for (let i in yeni{
-//  return i.
-//   }
-// };
-// console.log(capitalizeFirstLetter(inputString));
+const inputString = "Lorem ipsum dolor sit amet, consecteturadipiscing elit.";
+const capitalizeFirstLetter = (inputString) => {
+let yeni= inputString.split(' ')  
+  for (let i in yeni){
+    yeni[i]=yeni[i].charAt(0).toUpperCase()+yeni[i].slice(1)
+
+  }
+  return yeni.join(' ')
+};
+console.log(capitalizeFirstLetter(inputString));
 
 
 
-// console.log(inputString.split(' '));
-// ["Lorem", "ipsum", "dolor", "sit", "amet,", "consecteturadipiscing", "elit."];
