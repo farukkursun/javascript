@@ -76,14 +76,83 @@ fiyatlar.map((p, i, array) => {
 
 console.log(fiyatlar);
 
-
 //* ======================================================
 //*                       FILTER METHOD
 //* ======================================================
 //* prices array'inde fiyatı 100 TL den az olanlari ayri
 //* bir diziye saklayalim.
 
-
-const yeniDizi=  prices.filter((p)=> p<100)
+const yeniDizi = prices.filter((p) => p < 100);
 console.log(yeniDizi);
+
+//* ======================================================
+//*                       PIPELINE
+//* ======================================================
+
+//!slide daki soru, pipeline olmazsa böyle uzun uzun if le çözeriz
+//* Fiyatı 100 TL den fazla olanlara %10 zam, 100 TL den az olanlara ise %15 zam yapılmak isteniyor. Ayrıca, zamlı olan yeni değerleri örnekteki gibi diziye saklamak istiyoruz.
+const tlFiyatlar = [100, 150, 100, 50, 80];
+
+const degerler = tlFiyatlar.map((d) => {
+  if (d > 100) {
+    d = d * 1.1;
+  } else {
+    d = (d * 115) / 100;
+  }
+  return d;
+});
+console.log(degerler);
+
+//  altarnatif filter foreach ile
+const ilk = tlFiyatlar.filter((a) => a > 100).map((c) => c * 1.1);
+const son = tlFiyatlar.filter((a) => a <= 100).map((z) => z * 115 / 100);
+
+console.log(ilk.concat(son));
+
+//*-------------- ÖRNEK -------------------
+//*people dizisinde ismin ilk harfine göre arama yaparak ilgili isimlerin
+// ilk 3 harfini yazdıran bir fonksiyon yazınız.
+const people = [
+  "Baser",
+  "Berivan",
+  "Mehmet",
+  "Mustafa",
+  "Mali",
+  "Halil",
+  "Fatih",
+  "Hasret",
+  "Fatma",
+];
+
+const bulHarf = (harf) => {
+  people
+    .filter((a) => a.startsWith(harf.toUpperCase()))
+    .map((b) => b.slice(0, 3))
+    .forEach((x) => console.log(x));
+};
+bulHarf("b");
+bulHarf("M");
+
+
+//* ======================================================
+//*                     REDUCE
+//* ======================================================
+
+
+
+// SALARIS DIZISINDEKI MAASLARI TOPLAYINIZ (reduce metodunu kullanarak)
+
+const salaries =[3000, 5000, 4000, 6000, 7500]
+// forEch metodu dizilerde gecerlidir tek eleman döndüren reduce de kullanilamaz
+
+
+
+console.log(salaries.reduce((toplam, diziElaman)=>toplam+diziElaman,0));
+console.log(salaries.reduce((carpim, diziElaman)=>carpim*diziElaman,1));
+
+// ilk parametre toplam, ikinci parametre dizi elemani biz istedigimiz adi verebiliriz,
+// aradaki islem göre yapacagini algiliyot
+// istersek toplami istedigimiz rakamdan baslatabiliriz 0 yerine istedigimiz rakmai yazariz
+// o ile 1 i yazmaya gerek yok
+
 
