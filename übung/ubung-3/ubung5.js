@@ -35,3 +35,19 @@
 //   .filter((a) => a > 4000)
 //   .map((b) => b * 1.25)
 //   .forEach((c) => console.log(c));
+
+// const arabalar =['mercedes', 'bmw', 'reno']
+// console.log(arabalar.pop());
+
+const adlar = ["ahmet", "can", "Mustafa", "ayse"];
+const soyadlar = ["öztürk", "yilmaz", "ari", "cali"];
+const birlestir = (x, y) => {
+  let adveSoyadlar = [];
+  for (let i in x) {
+    adveSoyadlar[i] = `${x[i]} ${y[i]}  `;
+  }
+
+  return adveSoyadlar;
+};
+
+console.log(birlestir(adlar, soyadlar));

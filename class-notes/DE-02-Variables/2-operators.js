@@ -189,6 +189,25 @@ console.log(Number(null)); //0
 
 console.log(Number(true));
 
+
+
+console.log(Number("0x11")); // 17 x=hexa=16
+
+
+
+console.log(Number("0b101")); // 5 b=binary 2lik taban
+
+
+
+console.log(Number("0o11")); // 9 o=opal=8
+
+
+
+console.log(Number("sayi")); //NAN
+
+
+
+
 //* -------- NULLISH COALESCING OPERATOR----------- */
 //?  Bir ifadenin null veya undefined olması durumuna 
 //göre seçim yapmamıza olanak sağlayan bir operatördür.
