@@ -1,10 +1,10 @@
-//? : Tahmin Oyunu
-//* Program 0*100 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer bildi ise "Tebrikler  bildiniz" yazacaktır.
+// ? : Tahmin Oyunu
+// * Program 0*100 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer bildi ise "Tebrikler  bildiniz" yazacaktır.
 
-// const rastgele = Math.ceil(Math.random() * 20);
-// console.log(rastgele);
+const rastgele = Math.ceil(Math.random() * 20);
+console.log(rastgele);
 
-// let hak = 5;
+let hak = 5;
 
 // while (hak > 0) {
 //   const tahmin = +prompt("0-20 arasında bir sayı giriniz");
