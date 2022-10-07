@@ -58,11 +58,11 @@
 //* 1. su kaynayana kadar bekleyin -> kettle -> work or failed
 //* 2. çay ekle --> çay var ya da yok
 //* 3. demlenmesini bekle
-// const bekle = (ms) => {
-//   const start = new Date().getTime();
-//   while (new Date().getTime() < start + ms);
-// };
-//!ilk then de sıkıntı varsa direk catch e düşer
+const bekle = (ms) => {
+  const start = new Date().getTime();
+  while (new Date().getTime() < start + ms);
+};
+// !ilk then de sıkıntı varsa direk catch e düşer
 const brewTea = () => {
   boil()
     .then((status1) => {

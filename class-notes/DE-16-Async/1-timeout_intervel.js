@@ -2,7 +2,7 @@
 //*              1- Senkron-Asenkron Programlama
 //* ================================================================
 
-//! Javascript, bir single-threaded ve Asenkron Programlama dilidir.
+//! Javascript, bir single-threaded ve Asenkron Programlama dilidir. (bu yanlis alabilir)
 
 //? Asenkron Programlama
 //? --------------------------------------------------------------
