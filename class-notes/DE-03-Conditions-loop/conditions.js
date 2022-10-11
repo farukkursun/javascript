@@ -19,7 +19,7 @@ console.log("-------------------------------------");
 // const sayi2 = +prompt("2. sayıyı giriniz");
 
 // //!if şartlarında tek satırlık yapılacak varsa, süslü yazılmadan
-// //da olur, ama yapılacak 2 ve daha fazla şey varsa süslü şart
+//da olur, ama yapılacak 2 ve daha fazla şey varsa süslü şart
 
 // let sonuc = 0;
 

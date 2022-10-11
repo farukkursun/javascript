@@ -66,19 +66,20 @@
 //  }
 //  console.log(sonuc);
 
- const sayi=prompt('bir sayi giriniz')
- let sonuc=0
+//  const sayi=prompt('bir sayi giriniz')
+//  let sonuc=0
 
- if(sayi%2==0)
- sonuc='girdiginiz sayi cift';
- else 
- sonuc='girdiginiz sayi tek'
- console.log(sonuc);
+//  if(sayi%2==0)
+//  sonuc='girdiginiz sayi cift';
+//  else 
+//  sonuc='girdiginiz sayi tek'
+//  console.log(sonuc);
 
 
-const sayi1= +prompt('bir sayi giriniz')
-const sayi2= +prompt('bir sayi giriniz')
-const sayi3= +prompt('bir sayi giriniz')
+// const sayi1= +prompt('bir sayi giriniz')
+// const sayi2= +prompt('bir sayi giriniz')
+// const sayi3= +prompt('bir sayi giriniz')
 
-console.log(sayi1+sayi2+sayi3);
-console.log(sayi1*sayi2*sayi3);
+// console.log(sayi1+sayi2+sayi3);
+// console.log(sayi1*sayi2*sayi3);
+

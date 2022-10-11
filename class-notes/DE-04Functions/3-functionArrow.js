@@ -24,7 +24,7 @@ const menu = (x) => {
   console.log("===========================");
 };
 
-menu(3);
+menu();
 
 // ornek 3#######################
 // new Date()= bize şu anın tüm tarihini verir. .getFullYear() bu şekilde .

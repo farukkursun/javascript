@@ -29,7 +29,7 @@ console.log(str4, typeof str4);
 // *               concat() immutable=değiştirmez
 // *=========================================================
 
-let s1 = "hello ";
+const s1 = "hello ";
 const s2 = "World ";
 
 s3 = s1.concat(s2);
@@ -95,7 +95,7 @@ console.log(kelime.toUpperCase().includes("TO BE")); // yapararak büyük harfte
 //* ------------------------------------------------
 
 const kelime1 = "to be or nat to be, that is The questions.";
-console.log(kelime1.indexOf("be")); // ilk 'be
+console.log(kelime1.indexOf("be")); // 3 - ilk 'be
 console.log(kelime1.lastIndexOf("be")); // sondan ariyor
 console.log(kelime1.indexOf("this")); // olmayan kelime aranirsa -1 aliyor
 console.log(kelime1.indexOf(" ")); // bos ilk karakter

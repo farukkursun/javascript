@@ -63,7 +63,7 @@ for (let i = 1; i <= 10; i++) {
 // }while(number1<0 || number1>100)
 
 
-// şarta bakmadan ilk etapta do nun içindeki istek yapılır, sonrasında while içi true old sürece do içindeki istek yapılmaya devam edilir
+// // şarta bakmadan ilk etapta do nun içindeki istek yapılır, sonrasında while içi true old sürece do içindeki istek yapılmaya devam edilir
 // console.log(number1);
 
 // ? ORNEK2: klavyeden q karakteri girilene kadar sayı girişi yapan bir programı döngü kullanarak yazınız.
