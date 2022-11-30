@@ -32,7 +32,7 @@ listeButon.onclick = () => {
 const showListe = () => {
   listeUl.innerHTML += `<li>
 <i class='fa fa-check fa-lg'></i>
-<p> ${listeInput.value}</p>
+<p>${listeInput.value}</p>
 <i class='fa fa-trash fa-lg'></i>
 </li>`;
   toplam.textContent = total;
@@ -61,7 +61,7 @@ const createSilButon = () => {
       );
       console.log(silinecekIndis);
       liste.splice(silinecekIndis, 1);
-
+        console.log(liste);
       deleteBtn.parentElement.remove();
 
       // console.log(liste);
